@@ -43,6 +43,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BootData.cs" />
     <Compile Include="CameraData.cs" />
     <Compile Include="CameraModelData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

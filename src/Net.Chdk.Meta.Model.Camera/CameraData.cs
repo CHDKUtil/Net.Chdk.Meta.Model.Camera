@@ -6,5 +6,6 @@ namespace Net.Chdk.Meta.Model.Camera
     {
         public CameraModelData[] Models { get; set; }
         public SoftwareEncodingInfo Encoding { get; set; }
+        public BootData Boot { get; set; }
     }
 }
