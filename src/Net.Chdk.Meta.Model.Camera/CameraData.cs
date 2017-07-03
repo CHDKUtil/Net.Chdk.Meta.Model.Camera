@@ -2,9 +2,10 @@
 
 namespace Net.Chdk.Meta.Model.Camera
 {
-    public sealed class CameraData
+    public abstract class CameraData<TModel>
+        where TModel : CameraModelData
     {
-        public CameraModelData[] Models { get; set; }
+        public TModel[] Models { get; set; }
         public SoftwareEncodingInfo Encoding { get; set; }
         public BootData Boot { get; set; }
     }
