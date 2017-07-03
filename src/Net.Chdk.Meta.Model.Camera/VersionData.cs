@@ -2,6 +2,6 @@
 {
     public sealed class VersionData
     {
-        public string Revision { get; set; }
+        public string Version { get; set; }
     }
 }
