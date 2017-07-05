@@ -46,6 +46,7 @@
     <Compile Include="BootData.cs" />
     <Compile Include="CameraData.cs" />
     <Compile Include="CameraModelData.cs" />
+    <Compile Include="CardData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="..\..\..\Net.Chdk.Core\src\Net.Chdk.Shared\Net.Chdk.Shared.projitems" Label="Shared" />
