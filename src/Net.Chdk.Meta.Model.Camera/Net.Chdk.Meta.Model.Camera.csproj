@@ -2,18 +2,21 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.0</TargetFramework>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <Description>CHIMP camera meta model</Description>
-    <AssemblyName>Net.Chdk.Meta.Model.Camera</AssemblyName>
     <RootNamespace>Net.Chdk.Meta.Model.Camera</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Version>0.1.0</Version>
+    <Product>CHIMP</Product>
+    <Authors>Dmitry Shechtman</Authors>
+    <Copyright>Copyright © 2017 Dmitry Shechtman</Copyright>
   </PropertyGroup>
 
   <PropertyGroup>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Net.Chdk.Meta.Model.Camera</Title>
-    <PackageVersion>0.1.0-alpha</PackageVersion>
-    <Authors>Dmitry Shechtman</Authors>
-    <Copyright>Copyright © 2017 Dmitry Shechtman</Copyright>
+    <PackageVersion>$(Version)-alpha</PackageVersion>
     <PackageIconUrl>https://raw.githubusercontent.com/CHDKUtil/CHIMP/master/tiny.png</PackageIconUrl>
     <PackageLicenseUrl>https://raw.githubusercontent.com/CHDKUtil/Net.Chdk.Meta.Model.Camera/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/CHDKUtil/Net.Chdk.Meta.Model.Camera</PackageProjectUrl>
@@ -31,10 +34,8 @@
     <TreatSpecificWarningsAsErrors />
   </PropertyGroup>
 
-  <Import Project="..\..\..\Net.Chdk.Core\src\Net.Chdk.Shared\Net.Chdk.Shared.projitems" Label="Shared" />
-
   <ItemGroup>
-    <PackageReference Include="net.chdk.json" Version="0.1.0-alpha" />
+    <PackageReference Include="Net.Chdk.Json" Version="0.1.0-alpha" />
     <PackageReference Include="newtonsoft.json" Version="10.0.2" />
   </ItemGroup>
 
